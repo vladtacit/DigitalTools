@@ -3,11 +3,17 @@
 Push to two remotes with one command:
 
 ```bash
-# Add the second URL as an additional push URL for 'origin'
-git remote set-url --add --push origin git@github.com:user/RepoName.git
+# push an existing repository to 2 remote
 
-cat ./.git/config
-pushurl = git@github.com:user/RepoName.git
+git init
+git add .
+git commit -m "Transfer to new repository to 2 remote"
+git remote add origin git://original/repo.git
+git remote set-url --add --push origin git://original/repo.git
+git remote set-url --add --push origin git://another/repo.git
+git branch -M main
+git push -u origin main
+
 ```
 
 ## [~]
