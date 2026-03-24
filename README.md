@@ -18,4 +18,6 @@ Snowflake
 
 ## Work tools
 
-&#9635;
+[Network Information](./NetInfo.md)
+
+## [~]
