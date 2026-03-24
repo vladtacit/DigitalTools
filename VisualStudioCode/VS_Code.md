@@ -8,13 +8,33 @@
 
 [Самое заметное обновление VS Code в 2025 году. Агенты теперь доступны всем, бесплатно и с поддержкой MCP](https://habr.com/ru/companies/bar/news/898538/) **Agent mode**
 
-Как подключить прокси в VS Code?
+## Как подключить прокси в VS Code?
+
+Open the Command Palette and type "Open User Settings (JSON)".
+
+```json
+"http.proxy": "http://proxyname:port",
+"http.proxyAuthorization": null, // or your authorization string if needed
+"http.proxyStrictSSL": true // set to false if you have SSL inspection issues
 
 ```
+
+```json
 {
     "http.proxy": "http://user:pass@my.proxy.address:8080",
     "http.proxyStrictSSL": false,
 }
+```
+
+### HTTPS proxy
+
+```json
+{
+    "http.proxySupport": "override",
+    "http.proxy": "http://username:password@host:port",
+    "http.proxyStrictSSL": false
+}
+
 ```
 
 [Частые полезные настройки VS Code](https://gist.github.com/muks999/50caf7ba36c4899233d25cd620ed4b79)
