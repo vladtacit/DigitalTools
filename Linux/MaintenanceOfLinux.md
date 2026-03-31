@@ -6,4 +6,16 @@
 
 [Основы Linux: от командной строки до веб-сервера. PDF local](../._Store/linux-book.pdf)
 
+# Hardware
+
+```bash
+# Text
+hwinfo > hardwareinfo.txt
+# or for a shorter summary
+hwinfo --short > hardwareinfo_short.txt
+
+# HTML
+sudo lshw -html > hardware_info.html
+```
+
 ## [~]
