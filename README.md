@@ -23,8 +23,8 @@ Snowflake
 ---
 EML:
 
-- Experience
+- Enhanced, Experience
 - Monitoring, Management
-- L
+- Local
 
 ## [~]
